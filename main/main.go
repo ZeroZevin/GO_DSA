@@ -1,11 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"god"
+	sequential_list "data-structures/linear-list/sequential-list"
 )
 
 func main() {
-	fmt.Println("god of zero")
-	fmt.Println(god.Atob())
+	sequential_list.SequentialListTest()
 }
