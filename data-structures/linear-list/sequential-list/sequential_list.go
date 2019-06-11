@@ -53,7 +53,7 @@ func (list *SequentialList) Locate(v interface{}) (int, error) {
 
 func (list *SequentialList) Insert(i int, v interface{}) error {
 	if list.Length() >= MaxSize {
-		return errors.New("List is full")
+		return errors.New("链表已满")
 	}
 
 	if i < 1 || i > list.Length()+1 {
