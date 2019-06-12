@@ -112,19 +112,6 @@ func (list *SinglyLinkedList) Delete(i int) error {
 	}
 
 	return nil
-	// j := 0
-	// p := list.first
-
-	// if p != nil {
-	// 	if p.next != nil {
-	// 		p.next = p.next.next
-	// 	} else {
-	// 		p.next = nil
-	// 	}
-	// 	return nil
-	// } else {
-	// 	return errors.New("下标超出范围")
-	// }
 }
 
 func (list *SinglyLinkedList) Print() {
