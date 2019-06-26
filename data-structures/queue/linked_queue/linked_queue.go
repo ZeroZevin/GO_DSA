@@ -26,19 +26,9 @@ func (queue *Queue) EnQueue(v interface{}) {
 		queue.head = node
 		queue.rear = node
 	} else {
-		p := queue.head
-
-		for p.next != nil {
-			p = p.next
-		}
-
-		p.next = node
+		queue.rear.next = node
 		queue.rear = node
 	}
-
-	// node.next = queue.rear
-
-	// queue.rear = node
 }
 
 func (queue *Queue) DeQueue() (interface{}, error) {
